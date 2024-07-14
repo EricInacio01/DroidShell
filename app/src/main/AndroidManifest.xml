@@ -1,0 +1,69 @@
+
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.droidshell">
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.DUMP" />
+	<uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+	<uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_PDB_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY" />
+	<uses-permission android:name="android.permission.ACCESS_DRM_CERTIFICATES" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FM_RADIO" />
+	<uses-permission android:name="android.permission.ACCESS_IMS_CALL_SERVICE" />
+	<uses-permission android:name="android.permission.ACCESS_INPUT_FLINGER" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_MTP" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_CONDITIONS" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS" />
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+	<uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+	<uses-permission android:name="com.sec.android.app.sysscope.permission.ACCESS_SYSTEM_INFO_SYSSCOPE_ONLY" />
+	<uses-permission android:name="android.permission.ACCESS_VOICE_INTERACTION_SERVICE" />
+	<uses-permission android:name="android.permission.sec.ACCESS_WIFI_SECURED_INFO" />
+	<uses-permission android:name="com.sec.android.SYSTEM_FILE_ACCESS" />
+	<uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/app_icon"
+		android:label="@string/app_name"
+		android:requestLegacyExternalStorage="true"
+		android:usesCleartextTraffic="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".RootviewActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:theme="@style/NoActionBar"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".DebugActivity"
+			android:screenOrientation="portrait" />
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+	</application>
+</manifest>
